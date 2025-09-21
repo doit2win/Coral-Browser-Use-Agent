@@ -1,0 +1,5 @@
+[[local-agent]]
+path = "agents/interface"
+
+[[local-agent]]
+path = "agents/browser-use"

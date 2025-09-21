@@ -1,0 +1,10 @@
+[project]
+name = "coral-browser-use-agent"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "browser-use>=0.1.0",
+    "python-dotenv>=1.0.1",
+    "langchain-mcp-adapters==0.1.7",
+    "uv>=0.7.17",
+]

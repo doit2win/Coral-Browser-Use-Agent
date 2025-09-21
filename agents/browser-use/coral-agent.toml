@@ -1,0 +1,26 @@
+[agent]
+name = "browser-use"
+version = "0.0.1"
+description = "Agent that uses browser-use to browse the web and report findings"
+
+[options.GOOGLE_API_KEY]
+type = "string"
+description = "Google API key used by browser-use's ChatGoogle client"
+
+[options.BROWSER_USE_MODEL]
+type = "string"
+description = "Model identifier for the ChatGoogle LLM"
+default = "gemini-2.5-flash"
+
+[options.TIMEOUT_MS]
+type = "string"
+description = "Connection/tool timeout in milliseconds"
+default = "300000"
+
+[options.CORAL_AGENT_DESCRIPTION]
+type = "string"
+description = "Optional description registered with Coral Server"
+default = "Browser-use agent that can browse the web and report results."
+
+[runtimes.executable]
+command = ["bash", "-c", "./run_agent.sh main.py"]
